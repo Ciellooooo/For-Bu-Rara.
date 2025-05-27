@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Refleksi Bu Rara</title>
+<style>
+  /* Reset dan dasar */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(to bottom, #d0eaff, #ffffff);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  header {
+    background-color: #0077cc;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 6px white;
+  }
+
+  header h2 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-shadow: 0 0 4px white;
+  }
+
+  section {
+    padding: 1.5rem 1rem;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  h3 {
+    color: #0077cc;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 4px #a0d8ff;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 4px #d1ecff;
+  }
+
+  /* Carousel */
+  .carousel-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .carousel {
+    display: flex;
+    transition: transform 1s ease-in-out;
+  }
+
+  .carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+    border-radius: 12px;
+    max-height: 80vh;
+  }
+
+  /* Tombol */
+  button {
+    background-color: #ff66b2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 8px #ffaad4;
+    transition: background 0.3s;
+    margin: 1.5rem auto;
+    display: block;
+  }
+
+  button:hover {
+    background-color: #e0559e;
+  }
+
+  /* Foto tambahan */
+  .extra {
+    display: none;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .extra img {
+    width: 90%;
+    max-width: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Kartu renungan */
+  .devotional-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+  }
+
+  .verse {
+    background: #e0f2fe;
+    border-left: 5px solid #0ea5e9;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+    color: #374151;
+  }
+
+  .verse strong {
+    display: block;
+    margin-top: 0.5rem;
+    font-style: normal;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-weight: bold;
+    color: #0077cc;
+    text-shadow: 0 0 3px #fff;
+  }
+
+  /* Love animation */
+  .love {
+    position: fixed;
+    top: -20px;
+    width: 20px;
+    height: 20px;
+    background: url("https://cdn-icons-png.flaticon.com/512/833/833472.png") no-repeat center;
+    background-size: contain;
+    animation: fall 6s linear infinite;
+    opacity: 0.6;
+    z-index: 0;
+  }
+
+  @keyframes fall {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+    }
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    header h2 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+    }
+
+    .carousel img {
+      max-height: 60vh;
+    }
+
+    .extra img {
+      width: 95%;
+    }
+
+    .verse {
+      font-size: 0.95rem;
+    }
+  }
+</style>
+
+  </head>
+  <body>
+    <!-- Animated hearts -->
+    <script>
+      for (let i = 0; i < 15; i++) {
+        let heart = document.createElement("div");
+        heart.className = "love";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = Math.random() * 3 + 4 + "s";
+        document.body.appendChild(heart);
+      }
+    </script>
+
+    <header>
+      <h1>Refleksi Pembelajaran</h1>
+      <h2>Pendidikan Pancasila Bab 6 bersama Bu Rara</h2>
+    </header>
+
+    <section class="message">
+<h3>Untuk Bu Rara tercinta,</h3>
+<p>
+  Meski Ibu hanya sebentar bersama kami sebagai guru pengganti, kehadiran Ibu meninggalkan kesan yang sangat dalam.
+</p>
+<p>
+Bu Rara bukan sekadar guru, tapi pribadi yang selalu membuat suasana belajar jadi menyenangkan dan penuh semangat.
+</p>
+<p>
+  Terima kasih atas semua perhatian dan kebaikan hati Ibu. Kami mencintai Ibu sepenuh hati, dan mendoakan yang terbaik untuk langkah Ibu ke depan.
+</p>
+<p>
+  -kelas 8.3 ❤️
+</p>
+
+    </section>
+
+    <section class="carousel-container">
+      <div class="carousel" id="carousel">
+        <img src="assets/WhatsApp Image 2025-05-27 at 1.44.58 PM.jpeg" alt="Foto 1" />
+        <img src="assets/WhatsApp Image 2025-05-27 at 1.44.59 PM (1).jpeg" alt="Foto 2" />
+        <img src="assets/WhatsApp Image 2025-05-27 at 1.44.59 PM.jpeg" alt="Foto 3" />
+        <img src="assets/WhatsApp Image 2025-05-27 at 1.45.00 PM.jpeg" alt="Foto 4" />
+        <img src="assets/WhatsApp Image 2025-05-27 at 1.45.01 PM.jpeg" alt="Foto 5" />
+        <img src="assets/WhatsApp Image 2025-05-27 at 1.45.02 PM (1).jpeg" alt="Foto 6" />
+        <img src="assets/WhatsApp Image 2025-05-27 at 1.45.02 PM.jpeg" alt="Foto 7" />
+        <img src="assets/WhatsApp Image 2025-05-27 at 1.45.03 PM.jpeg" alt="Foto 8" />
+        <img src="assets/WhatsApp Image 2025-05-27 at 1.45.04 PM.jpeg" alt="Foto 9" />
+        <img src="assets/WhatsApp Image 2025-05-27 at 1.45.05 PM (1).jpeg" alt="Foto 10" />
+        <img src="assets/WhatsApp Image 2025-05-27 at 1.45.05 PM.jpeg" alt="Foto 11" />
+      </div>
+    </section>
+
+    <section class="ciello">
+      <h3>Pesan dari Pengetik</h3>
+      <p>
+        Bu Rara, terima kasih atas semua pelajaran dan kesabaran yang Ibu
+        berikan. Saya sangat berterima kasih karena Ibu selalu mendukung kami.
+        Saya akan terus mengingat kenangan ini. Lop yu, Bu!
+      </p>
+    </section>
+
+    <section class="kelas">
+      <h3>Pesan dari Kelas 8.3</h3>
+      <p>
+        Bu Rara yang kami sayangi, terima kasih atas ilmu, kesabaran, dan
+        semangat Ibu selama ini. Meski kelas kami sering ramai kayak kantin 😅,
+        Ibu tetap sabar membimbing kami. Kami bangga dan bersyukur punya guru
+        sebaik Ibu. Tetap semangat, Bu! Dengan cinta, kelas 8.3 ❤️
+      </p>
+    </section>
+
+    <button onclick="showExtra()">Lihat Kenangan Tambahan</button>
+
+    <div class="extra" id="extraPhotos">
+      <img src="assets/WhatsApp Image 2025-05-22 at 12.23.57 PM.jpeg" alt="Kenangan 1" />
+      <img src="assets/WhatsApp Image 2025-05-22 at 12.23.58 PM.jpeg" alt="Kenangan 2" />
+    </div>
+
+      <div class="devotional-card">
+
+    <div class="verse">
+      “Janganlah hendaknya kamu kuatir tentang apa pun juga, tetapi nyatakanlah dalam segala hal keinginanmu kepada Allah dalam doa dan permohonan dengan ucapan syukur. Damai sejahtera Allah, yang melampaui segala akal, akan memelihara hati dan pikiranmu dalam Kristus Yesus.”<br>
+      <strong>– Filipi 4:6-7</strong>
+    </div>
+     <div class="verse">
+    <p>
+      “Karena itu, sebagai orang-orang pilihan Allah yang dikuduskan dan dikasihi-Nya, kenakanlah belas kasihan, kemurahan, kerendahan hati, kelemahlembutan dan kesabaran. Sabarlah kamu seorang terhadap yang lain, dan ampunilah seorang akan yang lain apabila yang seorang menaruh dendam terhadap yang lain, sama seperti Tuhan telah mengampuni kamu, kamu perbuat jugalah demikian. Dan di atas semuanya itu: kenakanlah kasih, sebagai pengikat yang mempersatukan dan menyempurnakan.”<br>
+      <strong>– Kolose 3:12-14</strong>
+    </p>
+    </div>
+    <footer>With love, from Class 8.3</footer>
+
+    <script>
+      const carousel = document.getElementById("carousel");
+      let index = 0;
+      const total = 11;
+      setInterval(() => {
+        index = (index + 1) % total;
+        carousel.style.transform = `translateX(-${index * 100}%)`;
+      }, 3000);
+
+      function showExtra() {
+        document.getElementById("extraPhotos").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
